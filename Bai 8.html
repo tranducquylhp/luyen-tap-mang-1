@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a=[1,5,11,56,8,9,7,5,26,24];
+        for (let i=0;i<a.length-1;i++)
+            for (let j=i+1; j<a.length;j++){
+                if (a[i]<a[j]) {
+                    let t=a[i];
+                    a[i]=a[j];
+                    a[j]=t;
+                }
+            }
+        alert(a);
+    </script>
+</body>
+</html>
